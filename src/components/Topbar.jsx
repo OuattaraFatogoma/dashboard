@@ -23,7 +23,7 @@ function Topbar({setIsSidebarOpen}) {
               >
               <MenuIcon/>
             </IconButton>
-            <Box backgroundColor={colors.primary[400]} paddingLeft="1rem">
+            <Box backgroundColor={colors.primary[400]} paddingLeft="1rem" display="flex">
               <InputBase placeholder='Search'/>
               <IconButton>
                 <SearchIcon/>
