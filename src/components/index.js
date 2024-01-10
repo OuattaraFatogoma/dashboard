@@ -1,3 +1,9 @@
 export { default as Topbar } from './Topbar';
 export { default as Sidebar } from './Sidebar';
 export { default as Header } from './Header';
+export { default as BarChart } from './BarChart';
+export { default as PieChart } from './PieChart';
+export { default as LineChart } from './LineChart';
+export { default as GeoChart } from './GeoChart';
+export { default as ProgressCircle } from './ProgressCircle';
+export { default as StatBox } from './StatBox';

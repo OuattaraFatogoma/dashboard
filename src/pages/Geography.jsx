@@ -3,6 +3,7 @@ import { Header } from "../components";
 import * as d3 from "d3";
 import { mockGeographyData} from "../data/mokData";
 import { geoFeatures } from "../data/mockGeoFeatures";
+import { useEffect } from "react";
 
 function Geography() {
   const height = 500;
@@ -20,6 +21,13 @@ function Geography() {
     if(!population) return 0;
     return population.value
   }
+  useEffect(()=>{
+    const selection = d3.select("div[class=geoChart]>svg");
+    selection.call(d3.zoom()
+      .scaleExtent([1, 10])
+      .translateExtent([[0, 0], [width, height]]));
+
+  },[])
   return (
     <Box>
       <Header title="Geographie CHART"  subtitle="Simple Geographie chart"/>
