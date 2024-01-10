@@ -39,3 +39,22 @@ a{
     display: block;
     width: 100%;
 }
+
+.countries{
+    stroke: rgb(221, 221, 221);
+    stroke-width: .5px;
+}
+.countries:hover{
+    fill: chocolate;
+}
+
+.graticule{
+    fill : none;
+    stroke: gray;
+    stroke-width: .5px;
+}
+.graticule-outline{
+    fill: none;
+    stroke: gray;
+    stroke-width: 2px;
+}
