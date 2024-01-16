@@ -15,9 +15,9 @@ function Dashboard() {
   const colors = token(theme.palette.mode);
   return (
     <Box>
-      <Box display="flex" justifyContent="space-between">
+      <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard"/>
-        <Button variant='contained' sx={{backgroundColor: colors.greenAccent[700]}}>Dowload <DownloadIcon/></Button>
+        <Button variant='small' sx={{backgroundColor: colors.greenAccent[700]}}>Dowload <DownloadIcon/></Button>
       </Box>
 
       <Box
